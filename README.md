@@ -25,12 +25,25 @@ Clone the repo
     user@laptop:~$ git clone https://github.com/eriksjolund/install-ensemble-into-a-linux-container.git 
 ```
 
-Build the container
+Build the container and have the result written to the file ensembleCentos6.sif  (an arbitrarily chosen filename).
 
 ```
-    user@laptop:~$ sudo singularity build install-ensemble-into-a-linux-container/ensemble.dif
+    user@laptop:~$ sudo singularity build ensembleCentos6.sif install-ensemble-into-a-linux-container/ensemble.dif
 ```
 
 Install Ensemble
 
+```
+    user@laptop:~$ singularity shell ensembleCentos6.sif
+    Singularity ensembleCentos6:~/> cd ensemble 
+    Singularity ensembleCentos6:~/ensemble> LC_ALL=C csh ensemble_inst.csh
+```
 
+
+Run Ensemble
+
+```
+    user@laptop:~$ singularity shell ensembleCentos6.sif
+    Singularity ensembleCentos6:~/ensemble> source ~/.bashrc
+    user@laptop:~$ LC_ALL=C ensemble /home/user/ensemble/ENSEMBLE/example/example.par
+```
