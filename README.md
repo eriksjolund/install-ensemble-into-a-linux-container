@@ -1,5 +1,7 @@
 # install-ensemble-into-a-linux-container
-Install Ensemble Suite (NMR software) into a Linux container. (Status: Right now the Ensemble software is not installed inside container but into the users home directory)
+Install Ensemble Suite (NMR software) into a Linux container. 
+
+__Status__: Right now all the software dependencies for the Ensemble software are installed into the container but not the Ensemble software itself. Instead  the Ensemble sofware is installed into the user's home directory. A future goal would be to install everything into the container.
 
 ## Introduction
 
