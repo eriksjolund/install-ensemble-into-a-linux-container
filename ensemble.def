@@ -9,7 +9,7 @@ From: centos:6
     yum -y install java-1.6.0-openjdk.x86_64
     yum -y install glibc.i686
     yum -y install perl-libwww-perl
-    yum -y groupinstall 'Development Tools'
+    yum -y groupinstall "Development Tools"
     yum -y groupinstall "Compatibility libraries"
     yum -y install libncurses.so.5
     yum -y install glibc.i686
