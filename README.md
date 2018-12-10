@@ -16,6 +16,8 @@ Singularity version 3.0.1 was used
     singularity version 3.0.1-145.gc9822fec
 ```
 
+See also [Singularity installation instructions](https://github.com/sylabs/singularity/blob/master/INSTALL.md)
+
 
 Clone the repo 
 
