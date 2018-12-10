@@ -1,0 +1,20 @@
+Bootstrap: docker
+From: centos:6
+
+%post
+    yum -y update
+    yum -y install perl-Time-HiRes
+    yum -y install java-1.6.0-openjdk.x86_64
+    yum -y install glibc.i686
+    yum -y install perl-libwww-perl
+    yum -y groupinstall 'Development Tools'
+    yum -y groupinstall "Compatibility libraries"
+    yum -y install libncurses.so.5
+    yum -y install glibc.i686
+    yum -y install libfreetype.so.6
+    yum -y install libfontconfig.so.1
+    yum -y install libstdc++.so.6
+
+%environment
+    export LC_ALL=C
+
