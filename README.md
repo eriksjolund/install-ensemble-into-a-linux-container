@@ -1,5 +1,5 @@
 # install-ensemble-into-a-linux-container
-Install Ensemble Suite (NMR software) into a Linux container.
+Install Ensemble Suite (NMR software) into a Linux container. (Status: Right now the Ensemble software is not installed inside container but into the users home directory)
 
 ## Introduction
 
@@ -30,3 +30,7 @@ Build the container
 ```
     user@laptop:~$ sudo singularity build install-ensemble-into-a-linux-container/ensemble.dif
 ```
+
+Install Ensemble
+
+
